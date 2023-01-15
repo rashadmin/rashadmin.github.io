@@ -20,3 +20,23 @@ function activateBox(a, boxId) {
   box.classList.add('active');
 }
 
+function downloadFile() {
+  // Create an anchor element
+  var a = document.createElement("a");
+  // Set the href and download attributes for the anchor element
+  // You can set the download file name as well here
+  a.href = "Ameen Abdulrasheed Resume.pdf";
+  a.download = "fileName.ext";
+  // Append the anchor element to the document
+  document.body.appendChild(a);
+  // Click the anchor element to trigger the download
+  if (typeof a.download === 'undefined') {
+    window.location = href;
+  } else {
+    a.target = '_blank';
+    a.click();
+  }
+  // Remove the anchor element from the document
+  document.body.removeChild(a);
+}
+

@@ -26,7 +26,7 @@ function downloadFile() {
   // Set the href and download attributes for the anchor element
   // You can set the download file name as well here
   a.href = "Ameen Abdulrasheed Resume.pdf";
-  a.download = "fileName.ext";
+  a.download = "Abdulrasheed_Ameen_Resume.pdf";
   // Append the anchor element to the document
   document.body.appendChild(a);
   // Click the anchor element to trigger the download
